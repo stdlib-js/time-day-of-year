@@ -20,7 +20,7 @@ limitations under the License.
 
 # dayOfYear
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Determine the day of the year.
 
@@ -166,6 +166,22 @@ $ day-of-year 12 31 2016
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/time/day-of-quarter`][@stdlib/time/day-of-quarter]</span><span class="delimiter">: </span><span class="description">determine the day of the quarter.</span>
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -209,8 +225,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/time-day-of-year/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/time-day-of-year?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/time-day-of-year.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/time-day-of-year/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -222,6 +242,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/time-day-of-year/main/LICENSE
 
 [date-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+<!-- <related-links> -->
+
+[@stdlib/time/day-of-quarter]: https://github.com/stdlib-js/time-day-of-quarter
+
+<!-- </related-links> -->
 
 </section>
 
