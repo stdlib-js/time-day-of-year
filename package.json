@@ -1,0 +1,36 @@
+{
+  "name": "@stdlib/time-day-of-year",
+  "version": "0.0.0",
+  "description": "Determine the day of the year.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/time-day-of-year.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtime",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "date",
+    "year",
+    "yr",
+    "day",
+    "ordinal",
+    "gregorian",
+    "calendar",
+    "time"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
