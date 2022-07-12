@@ -31,7 +31,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@deno/mod.js';
+import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@v0.0.9-deno/mod.js';
 ```
 
 #### dayOfYear( \[month\[, day, year]] )
@@ -84,7 +84,7 @@ var num = dayOfYear( new Date() );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@deno/mod.js';
+import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@v0.0.9-deno/mod.js';
 
 var v;
 var i;
