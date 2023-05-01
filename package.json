@@ -44,7 +44,7 @@
     "@stdlib/assert-is-string": "^0.0.8",
     "@stdlib/cli-ctor": "^0.0.3",
     "@stdlib/fs-read-file": "^0.0.8",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/string-lowercase": "^0.0.9",
     "@stdlib/time-days-in-month": "^0.0.9"
   },
