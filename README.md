@@ -35,43 +35,31 @@ limitations under the License.
 
 > Determine the day of the year.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/time-day-of-year
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dayOfYear = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-day-of-year/tags). For example,
-
-```javascript
-dayOfYear = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@v0.1.0-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dayOfYear = require( 'path/to/vendor/umd/time-day-of-year/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dayOfYear;
-})();
-</script>
+var dayOfYear = require( '@stdlib/time-day-of-year' );
 ```
 
 #### dayOfYear( \[month\[, day, year]] )
@@ -123,13 +111,8 @@ var num = dayOfYear( new Date() );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dayOfYear = require( '@stdlib/time-day-of-year' );
 
 var v;
 var i;
@@ -138,18 +121,72 @@ for ( i = 0; i < 2021; i++ ) {
     v = dayOfYear( 'Dec', 31, i );
     console.log( 'In the year %d, December 31 is day number %d.', i, v );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/time-day-of-year-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: day-of-year [options] [<month> <day> <year>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ day-of-year
+<number>
+```
+
+For a specific date,
+
+```bash
+$ day-of-year 12 31 2016
+366
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -204,8 +241,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/time-day-of-year.svg
 [npm-url]: https://npmjs.org/package/@stdlib/time-day-of-year
 
-[test-image]: https://github.com/stdlib-js/time-day-of-year/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/time-day-of-year/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/time-day-of-year/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/time-day-of-year/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/time-day-of-year/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/time-day-of-year?branch=main
@@ -242,7 +279,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/time/day-of-quarter]: https://github.com/stdlib-js/time-day-of-quarter/tree/umd
+[@stdlib/time/day-of-quarter]: https://github.com/stdlib-js/time-day-of-quarter
 
 <!-- </related-links> -->
 
