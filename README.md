@@ -35,38 +35,33 @@ limitations under the License.
 
 > Determine the day of the year.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/time-day-of-year
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dayOfYear = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dayOfYear = require( 'path/to/vendor/umd/time-day-of-year/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dayOfYear;
-})();
-</script>
+var dayOfYear = require( '@stdlib/time-day-of-year' );
 ```
 
 #### dayOfYear( \[month\[, day, year]] )
@@ -118,13 +113,8 @@ var num = dayOfYear( new Date() );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dayOfYear = require( '@stdlib/time-day-of-year' );
 
 var v;
 var i;
@@ -133,18 +123,72 @@ for ( i = 0; i < 2021; i++ ) {
     v = dayOfYear( 'Dec', 31, i );
     console.log( 'In the year %d, December 31 is day number %d.', i, v );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/time-day-of-year-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: day-of-year [options] [<month> <day> <year>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ day-of-year
+<number>
+```
+
+For a specific date,
+
+```bash
+$ day-of-year 12 31 2016
+366
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -227,8 +271,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/time-day-of-year/tree/deno
+[deno-readme]: https://github.com/stdlib-js/time-day-of-year/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/time-day-of-year/tree/umd
+[umd-readme]: https://github.com/stdlib-js/time-day-of-year/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/time-day-of-year/tree/esm
+[esm-readme]: https://github.com/stdlib-js/time-day-of-year/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/time-day-of-year/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/time-day-of-year/main/LICENSE
@@ -237,7 +284,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/time/day-of-quarter]: https://github.com/stdlib-js/time-day-of-quarter/tree/umd
+[@stdlib/time/day-of-quarter]: https://github.com/stdlib-js/time-day-of-quarter
 
 <!-- </related-links> -->
 
