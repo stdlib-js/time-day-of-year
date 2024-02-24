@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/time-day-of-year/tags). For example,
+
+```javascript
 import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@v0.2.1-deno/mod.js';
 ```
 
@@ -95,7 +100,7 @@ var num = dayOfYear( new Date() );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@v0.2.1-deno/mod.js';
+import dayOfYear from 'https://cdn.jsdelivr.net/gh/stdlib-js/time-day-of-year@deno/mod.js';
 
 var v;
 var i;
