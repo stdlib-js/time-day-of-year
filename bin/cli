@@ -25,7 +25,7 @@
 var resolve = require( 'path' ).resolve;
 var readFileSync = require( '@stdlib/fs-read-file' ).sync;
 var CLI = require( '@stdlib/cli-ctor' );
-var dayOfYear = require( './../lib' );
+var dayOfYear = require( '@stdlib/time-day-of-year' );
 
 
 // MAIN //
